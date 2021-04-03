@@ -11,7 +11,7 @@ useEffect(()=>{
       setProduct(res.data)
     }
     fetchProduct()
-},[]) //[] dependency array if we need options on useEffect
+},[match]) //[] dependency array if we need options on useEffect
     return (
         <>
           <Link className="btn btn-light my-3" to = "/"> Go Back</Link>
