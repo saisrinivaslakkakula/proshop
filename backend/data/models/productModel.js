@@ -26,6 +26,9 @@ const productSchema = mongoose.Schema({
             type:String,
             required:true
         },
+        image:{
+            type:String
+        },
         
         brand:{
             type:String,
@@ -62,5 +65,5 @@ const productSchema = mongoose.Schema({
         },
        
     },{timestamps:true})
-    const Product = mongoose.model('productSchema',userSchema) 
+    const Product = mongoose.model('Product',productSchema) 
     export default Product

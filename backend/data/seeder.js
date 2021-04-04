@@ -1,7 +1,0 @@
-import mongoose from 'mongoose'
-import env from 'dotenv'
-import products from './products.js'
-import users from './users.js'
-import Users from './models/userModel.js'
-import Products from './models/productModel.js'
-import Orders from './models/orderModel.js'
