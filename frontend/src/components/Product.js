@@ -2,12 +2,13 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating.js'
 import {Link} from 'react-router-dom'
-
+import Image from 'react-bootstrap/Image'
 const Product = ({product}) => {
     return (
-           <Card className="p-3 my-3 rounded">
+       
+           <Card className="p-2 my-3 rounded " >
                 <Link to={`/product/${product._id}`}>
-                    <Card.Img src={product.image} variant="top"/> 
+                    <Card.Img   className="card-img-top" src={product.image} /> 
                 </Link>
                 <Card.Body>
                     <Link to={`/product/${product._id}`}>
@@ -21,6 +22,9 @@ const Product = ({product}) => {
                     </Card.Text>
                 </Card.Body>
             </Card> 
+           
+
+            
         
     )
 }

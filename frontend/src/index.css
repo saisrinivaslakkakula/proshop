@@ -20,5 +20,11 @@ main{
 }
 
 h1{
-  paddinf: 1rem;
+  padding: 1rem;
 }
+
+/*.card-img-top {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover !important;
+  }*/
