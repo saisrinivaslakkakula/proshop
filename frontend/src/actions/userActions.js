@@ -11,7 +11,7 @@ export const login = (email,password) => async(dispatch) =>{
             }
         }
         //console.log(config)
-        const {data} = await axios.post('/api/users/login',{email,password},config)
+        const {data} = await axios.post('/api/user/login',{email,password},config)
         
          dispatch({
             type : USER_LOGIN_SUCCESS,
@@ -28,7 +28,7 @@ export const login = (email,password) => async(dispatch) =>{
     }
 }
 
-export const register = (name,email,password) => async(dispatch) =>{
+export const register = (firstName, lastName, email, phoneNumber, password, Address, isFreeLancer) => async(dispatch) =>{
     try {
         dispatch({
             type:USER_REGISTER_REQUEST
@@ -38,8 +38,8 @@ export const register = (name,email,password) => async(dispatch) =>{
                 'Content-Type':'application/json'
             }
         }
-        //console.log(config)
-        const {data} = await axios.post('/api/users/',{name,email,password},config)
+        console.log(isFreeLancer)
+        const {data} = await axios.post('/api/user/add/',{firstName, lastName, email, phoneNumber,password, address:Address, isFreelancer:isFreeLancer},config)
         
          dispatch({
             type : USER_REGISTER_SUCCESS,

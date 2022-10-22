@@ -9,7 +9,7 @@ env.config()
 connectDB();
 const app = express()
 app.use(express.json()) //This is to tell express that the incoming request data will contain Json and a=parse the same. 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5001
 
 //const __dirname = path.resolve()
 if(process.env.NODE_ENV === 'production'){

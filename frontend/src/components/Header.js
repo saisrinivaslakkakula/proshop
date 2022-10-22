@@ -17,7 +17,7 @@ const Header = () => {
           <Navbar bg="dark" variant="dark"expand="lg" collapseOnSelect>
              <Container>
                <LinkContainer to="/">
-                <Navbar.Brand >My Press</Navbar.Brand>
+                <Navbar.Brand ><span><i className='fa fa-calendar'> &nbsp;</i></span>My Smart Cal</Navbar.Brand>
                </LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -26,9 +26,6 @@ const Header = () => {
                     <Button ><i className="fa fa-search"></i></Button>
                   </Form>
                   <Nav className="ml-auto">
-                    <LinkContainer to="/cart">
-                      <Nav.Link ><i className='fas fa-shopping-cart'></i>Cart</Nav.Link>
-                    </LinkContainer>
                     {userInfo
                     ? 
                     <NavDropdown title={userInfo.name} id='user-name'>

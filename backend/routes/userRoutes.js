@@ -1,6 +1,12 @@
-import express from 'express'
-import {authUser,getUserProfile,createUser,updateUserProfile} from '../controllers/userController.js'
-import {protect} from '../middleware/authMiddleWare.js'
+//import express from 'express'
+const express = require('express')
+//import {authUser,getUserProfile,createUser,updateUserProfile} from '../controllers/userController.js'
+const authUser = require('../controllers/userController.js')
+const getUserProfile = require('../controllers/userController.js')
+const createUser = require('../controllers/userController.js')
+const updateUserProfile = require('../controllers/userController.js')
+//import {protect} from '../middleware/authMiddleWare.js'
+const protect = require('../middleware/authMiddleWare.js')
 const router = express.Router()
 
 
